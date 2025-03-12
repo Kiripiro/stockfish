@@ -4,7 +4,7 @@ from stockfish import Stockfish
 STOCKFISH_PATH = "/usr/games/stockfish"
 
 # Initialisation de Stockfish avec les paramètres souhaités
-stockfish = Stockfish(path=STOCKFISH_PATH, parameters={"Threads": 2, "Minimum Thinking Time": 30})
+stockfish = Stockfish(path=STOCKFISH_PATH, parameters={"Threads": 4, "Minimum Thinking Time": 5})
 
 app = Flask(__name__)
 
