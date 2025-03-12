@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from stockfish import Stockfish
 
-STOCKFISH_PATH = "stockfish" 
+STOCKFISH_PATH = "/usr/games/stockfish"
 
 # Initialisation de Stockfish avec les paramètres souhaités
 stockfish = Stockfish(path=STOCKFISH_PATH, parameters={"Threads": 2, "Minimum Thinking Time": 30})

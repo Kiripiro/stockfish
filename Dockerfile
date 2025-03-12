@@ -4,6 +4,8 @@ FROM python:3.8-slim
 # Installer Stockfish et autres dépendances système
 RUN apt-get update && apt-get install -y stockfish && rm -rf /var/lib/apt/lists/*
 
+RUN which stockfish
+
 # Définir le répertoire de travail
 WORKDIR /app
 
