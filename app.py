@@ -1,8 +1,7 @@
 from flask import Flask, request, jsonify
 from stockfish import Stockfish
 
-# Remplacez ce chemin par le chemin absolu vers votre binaire Stockfish
-STOCKFISH_PATH = "/chemin/vers/stockfish"  # ex: "/usr/local/bin/stockfish"
+STOCKFISH_PATH = "stockfish" 
 
 # Initialisation de Stockfish avec les paramètres souhaités
 stockfish = Stockfish(path=STOCKFISH_PATH, parameters={"Threads": 2, "Minimum Thinking Time": 30})
